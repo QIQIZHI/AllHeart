@@ -10,6 +10,7 @@
 		632F834021F8715500340B0B /* CQL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632F833F21F8715500340B0B /* CQL.swift */; };
 		634BF64A220BEF48006A96DB /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634BF649220BEF48006A96DB /* MeViewController.swift */; };
 		6355791021F555AF00CC46E2 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6355790F21F555AF00CC46E2 /* MenuViewController.swift */; };
+		635C55B7220DB64E009C2D12 /* login.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 635C55B6220DB64E009C2D12 /* login.jpg */; };
 		63782EE121EDBCF20043E432 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63782EE021EDBCF20043E432 /* loginViewController.swift */; };
 		63782EE321EDBD160043E432 /* RegiesterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63782EE221EDBD160043E432 /* RegiesterViewController.swift */; };
 		63991421220D56C500C9416E /* admin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 63991420220D56C500C9416E /* admin.jpg */; };
@@ -48,6 +49,7 @@
 		632F833F21F8715500340B0B /* CQL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CQL.swift; sourceTree = "<group>"; };
 		634BF649220BEF48006A96DB /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		6355790F21F555AF00CC46E2 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		635C55B6220DB64E009C2D12 /* login.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = login.jpg; sourceTree = "<group>"; };
 		63782EE021EDBCF20043E432 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		63782EE221EDBD160043E432 /* RegiesterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegiesterViewController.swift; sourceTree = "<group>"; };
 		63991420220D56C500C9416E /* admin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = admin.jpg; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 		636B209721FD3C85002A998F /* img */ = {
 			isa = PBXGroup;
 			children = (
+				635C55B6220DB64E009C2D12 /* login.jpg */,
 				63991420220D56C500C9416E /* admin.jpg */,
 			);
 			path = img;
@@ -301,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63F62B1E21EDAFAD0037C20E /* LaunchScreen.storyboard in Resources */,
+				635C55B7220DB64E009C2D12 /* login.jpg in Resources */,
 				63F62B1B21EDAFAD0037C20E /* Assets.xcassets in Resources */,
 				63F62B1621EDAFA90037C20E /* Main.storyboard in Resources */,
 				63991421220D56C500C9416E /* admin.jpg in Resources */,

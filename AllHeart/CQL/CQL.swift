@@ -57,6 +57,18 @@ extension UIImage {
 }
 class CQL{
     init(){}
+    //获取登录状态
+    func getLoginFlag(userName:String){
+        LCCQLClient.execute("select loginFlag from _User where username = '\(userName)'"){ result in
+            var obId : String = ""
+            switch result{
+            case .success:
+                var loginflag = result
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
     //初始化头像
     func initHead(userName:String,image:UIImage){
         let obj = AVObject(className:"Headportrait")

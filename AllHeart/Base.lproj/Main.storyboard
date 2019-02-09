@@ -65,7 +65,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oYe-FM-Cex">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="login.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="oYe-FM-Cex">
                                 <rect key="frame" x="101" y="85" width="172" height="139"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -134,6 +134,10 @@
                                     <action selector="resigester:" destination="E5d-BZ-i4c" eventType="touchUpInside" id="Spy-SF-sxo"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="login.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="LAs-ZJ-Vam">
+                                <rect key="frame" x="103" y="92" width="169" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
@@ -149,14 +153,10 @@
                     <connections>
                         <outlet property="pw" destination="q8t-9l-YZ9" id="HLI-iz-fPJ"/>
                         <outlet property="un" destination="22g-wJ-2a4" id="J5i-uF-9hG"/>
+                        <outlet property="userimg" destination="LAs-ZJ-Vam" id="pxL-ZT-Lh3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SAW-wq-2w9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="bh5-eN-J7l">
-                    <connections>
-                        <action selector="selectphoto:" destination="E5d-BZ-i4c" id="YEg-KS-l2h"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="6676" y="-1440.6296851574214"/>
         </scene>
@@ -209,7 +209,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xrx-jn-fgC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1352.8" y="1042.128935532234"/>
+            <point key="canvasLocation" x="1353" y="1193"/>
         </scene>
         <!--消息-->
         <scene sceneID="8J3-k7-tP7">
@@ -284,13 +284,6 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jew-dh-Hpd">
-                                                    <rect key="frame" x="99" y="60" width="35" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qqb-hL-G1d">
                                                     <rect key="frame" x="5" y="89" width="339" height="48"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -308,6 +301,13 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="联系我"/>
                                                 </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jew-dh-Hpd">
+                                                    <rect key="frame" x="99" y="60" width="35" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -320,7 +320,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OSj-J0-MYu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3041" y="-72"/>
+            <point key="canvasLocation" x="3041" y="-206"/>
         </scene>
         <!--Me View Controller-->
         <scene sceneID="4Gx-4J-kH9">
@@ -376,21 +376,11 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ysa-5M-HIG">
-                                <rect key="frame" x="135" y="107" width="85" height="94"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lx5-Cn-BtF">
+                                <rect key="frame" x="128" y="112" width="127" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
                                 <connections>
-                                    <action selector="selectImageFromPL:" destination="R31-RP-lJj" eventType="touchUpInside" id="3yg-0V-aDQ"/>
-                                    <outletCollection property="gestureRecognizers" destination="Bfh-8R-enK" appends="YES" id="g9M-0h-w8H"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xit-Vi-Gy3">
-                                <rect key="frame" x="46" y="523" width="285" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="cancel:" destination="R31-RP-lJj" eventType="touchUpInside" id="69F-a7-lcI"/>
+                                    <action selector="selectImageFromPL:" destination="R31-RP-lJj" eventType="touchUpInside" id="6wD-nt-i1L"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -405,9 +395,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="cancelbutton" destination="Xit-Vi-Gy3" id="IDN-ek-ZTm"/>
                         <outlet property="hpt" destination="qTu-DW-7uz" id="XxD-Ae-CRW"/>
-                        <outlet property="imgbutton" destination="ysa-5M-HIG" id="RTi-TG-uIm"/>
+                        <outlet property="imgbutton" destination="lx5-Cn-BtF" id="MwF-8d-bas"/>
                         <outlet property="loginbutton" destination="kRN-PG-Zx8" id="emk-vG-wNQ"/>
                         <outlet property="username" destination="XaC-mG-clX" id="IHM-E6-p7C"/>
                     </connections>
@@ -646,7 +635,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qz9-mA-DyR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3980" y="611.24437781109452"/>
+            <point key="canvasLocation" x="3041" y="466"/>
         </scene>
         <!--志愿瞬间-->
         <scene sceneID="7gH-HV-AMc">
@@ -718,7 +707,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="35f-uM-oBH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3271" y="1042"/>
+            <point key="canvasLocation" x="3054" y="1192"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SLD-eg-LqA">
@@ -736,7 +725,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6UO-mU-Iia" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2319" y="1041"/>
+            <point key="canvasLocation" x="2290" y="1193"/>
         </scene>
         <!--我的-->
         <scene sceneID="UiB-yB-azM">
@@ -758,4 +747,7 @@
             <point key="canvasLocation" x="2164" y="-956.67166416791611"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="login.jpg" width="346" height="346"/>
+    </resources>
 </document>

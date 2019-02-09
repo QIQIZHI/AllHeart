@@ -11,7 +11,8 @@ import LeanCloud
 import AVOSCloud
 import AVOSCloudIM
 
-class loginViewController: UIViewController {
+
+class loginViewController  : UIViewController{
     @IBOutlet weak var un: UITextField!
     @IBOutlet weak var pw: UITextField!
     
@@ -27,9 +28,11 @@ class loginViewController: UIViewController {
         let _un = un.text
         let _pw = pw.text
         if un.text?.count != 0 && pw.text?.count != 0{
+            //登录
             LCUser.logIn(username:_un!,password:_pw!){result in
                 switch result{
                 case .success(let user):
+                    UserDefaults.standard.set(_un!, forKey: "name")
                     let alertB = UIAlertController(title: "登录成功", message: "点击确定跳转", preferredStyle: UIAlertController.Style.alert)
                     let okAction = UIAlertAction(title: "确定", style: .default, handler: {
                         action in
