@@ -10,11 +10,12 @@ import UIKit
 import LeanCloud
 import AVOSCloud
 import AVOSCloudIM
-
+import Alamofire
 
 class loginViewController  : UIViewController{
     @IBOutlet weak var un: UITextField!
     @IBOutlet weak var pw: UITextField!
+    var token=""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,6 +68,55 @@ class loginViewController  : UIViewController{
             alertB.addAction(okAction)
             self .present(alertB, animated: false, completion: nil)
         }
+        
+    }
+    func requestToken1(userID:String) -> Void {
+        let dicUser = ["userId":userID,
+                       "name":userID,
+                       "portraitUrl":"http://img3.duitang.com/uploads/item/201508/30/20150830083023_N3rTL.png"
+        ] //请求token的用户信息
+        let urlStr = "https://api.cn.ronghub.com/user/getToken.json" //网址接口
+        let appKey = "p5tvi9dspehr4"
+        let appSecret = "62ZE1vOiiXaZx5"
+        let nonce = "\(arc4random())"   //生成随机数
+        let timestamp = "\(NSDate().timeIntervalSince1970)"//时间戳
+        var sha1Value = appSecret + nonce + timestamp
+        sha1Value = sha1Value.sha1()//数据签名,sha1是一个加密的方法
+        let headers = [ //照着文档要求写的Http 请求的 4个head
+            "App-key":appKey
+            ,"Nonce":nonce
+            ,"Timestamp":timestamp
+            ,"Signature":sha1Value
+        ]
+        Alamofire.request(urlStr, method: .post, parameters: dicUser , encoding: URLEncoding.default, headers: headers).responseJSON { (response) in
+            print(response)
+            if let dic = response.result.value  as? NSDictionary{
+                let code = dic.value(forKey: "code") as! NSNumber
+                if code.stringValue == "200" {
+                    print(dic.value(forKey: "token"))
+                    self.token=dic.value(forKey: "token") as! String
+                    
+                    print("sadfasf  "+self.token)
+                    self.ConnectOne()
+                }
+            }
+        }
+    }
+    
+    func ConnectOne()->Void{
+        RCIM.shared().initWithAppKey("p5tvi9dspehr4")
+        
+        
+        RCIM.shared().connect(withToken: token,success: { (userId) -> Void in
+            print("登陆成功。当前登录的用户ID：\(userId)")
+        }, error: { (status) -> Void in
+            print("登陆的错误码为:\(status.rawValue)")
+        }, tokenIncorrect: {
+            //token过期或者不正确。
+            //如果设置了token有效期并且token过期，请重新请求您的服务器获取新的token
+            //如果没有设置token有效期却提示token错误，请检查您客户端和服务器的appkey是否匹配，还有检查您获取token的流程。
+            print("token错误")
+        })
         
     }
     //隐藏键盘事件

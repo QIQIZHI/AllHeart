@@ -69,6 +69,38 @@ class CQL{
             }
         }
     }
+    
+    func getOffer(finished : @escaping (_ datas: [LCObject]) -> Void){
+        LCCQLClient.execute("select username from offerInformation'") { result in
+            
+            switch result {
+            case .success:
+                finished(result.objects)
+            //print(result.objects.lcArray.jsonValue)
+            case .failure(let error):
+                print(error)
+                
+            }
+            
+        }
+    }
+    //查询提供帮助信息的条数
+    func getOfferCount(){
+        LCCQLClient.execute("select count(*) from offerInformation"){ result in
+            switch result{
+            case .success:
+                var count : Int = result.objects.lcValue.jsonValue as! Int
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+//    //从leancloud获取发布的提供帮助信息(此处的cql语句有问题）
+//    func getOffer(){
+//        LCCQLClient.execute("select content from offerInformation by time by desc") { result in
+//            var
+//        }
+//    }
     //初始化头像
     func initHead(userName:String,image:UIImage){
         let obj = AVObject(className:"Headportrait")

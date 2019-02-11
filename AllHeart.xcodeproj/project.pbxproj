@@ -11,9 +11,22 @@
 		634BF64A220BEF48006A96DB /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634BF649220BEF48006A96DB /* MeViewController.swift */; };
 		6355791021F555AF00CC46E2 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6355790F21F555AF00CC46E2 /* MenuViewController.swift */; };
 		635C55B7220DB64E009C2D12 /* login.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 635C55B6220DB64E009C2D12 /* login.jpg */; };
+		636989D6220E64E400C8D5EB /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636989D5220E64E400C8D5EB /* SettingViewController.swift */; };
 		63782EE121EDBCF20043E432 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63782EE021EDBCF20043E432 /* loginViewController.swift */; };
 		63782EE321EDBD160043E432 /* RegiesterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63782EE221EDBD160043E432 /* RegiesterViewController.swift */; };
+		639429E72211D0C9002CC6CC /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639429E62211D0C9002CC6CC /* MessageViewController.swift */; };
+		639429EA2211D0FA002CC6CC /* NSString+SHA1.m in Sources */ = {isa = PBXBuildFile; fileRef = 639429E92211D0FA002CC6CC /* NSString+SHA1.m */; };
+		639429EC2211D127002CC6CC /* secViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639429EB2211D127002CC6CC /* secViewController.swift */; };
 		63991421220D56C500C9416E /* admin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 63991420220D56C500C9416E /* admin.jpg */; };
+		63A4DFD0220FB62500E6F6D0 /* askTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A4DFCF220FB62500E6F6D0 /* askTableViewCell.swift */; };
+		63BF3B31220FD45D00748F8D /* offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BF3B30220FD45D00748F8D /* offer.swift */; };
+		63BF3B35220FE03800748F8D /* Me.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63BF3B34220FE03800748F8D /* Me.plist */; };
+		63D5C3D6220E702100E77F94 /* OfferTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D5C3D5220E702100E77F94 /* OfferTableViewController.swift */; };
+		63D5C3D8220E703500E77F94 /* AskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D5C3D7220E703500E77F94 /* AskTableViewController.swift */; };
+		63D5C3DA220E70B900E77F94 /* AddOfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D5C3D9220E70B900E77F94 /* AddOfferViewController.swift */; };
+		63D5C3DC220E70CB00E77F94 /* AddAskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D5C3DB220E70CB00E77F94 /* AddAskViewController.swift */; };
+		63D5C3DE220E7DF500E77F94 /* VolunteerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D5C3DD220E7DF500E77F94 /* VolunteerViewController.swift */; };
+		63D5C3E0220E7F3E00E77F94 /* offerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D5C3DF220E7F3E00E77F94 /* offerTableViewCell.swift */; };
 		63F62B1121EDAFA90037C20E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F62B1021EDAFA90037C20E /* AppDelegate.swift */; };
 		63F62B1321EDAFA90037C20E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F62B1221EDAFA90037C20E /* ViewController.swift */; };
 		63F62B1621EDAFA90037C20E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63F62B1421EDAFA90037C20E /* Main.storyboard */; };
@@ -50,9 +63,24 @@
 		634BF649220BEF48006A96DB /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		6355790F21F555AF00CC46E2 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		635C55B6220DB64E009C2D12 /* login.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = login.jpg; sourceTree = "<group>"; };
+		636989D5220E64E400C8D5EB /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		63782EE021EDBCF20043E432 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		63782EE221EDBD160043E432 /* RegiesterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegiesterViewController.swift; sourceTree = "<group>"; };
+		639429E42211C904002CC6CC /* RongCloud.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RongCloud.h; sourceTree = "<group>"; };
+		639429E62211D0C9002CC6CC /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		639429E82211D0DB002CC6CC /* NSString+SHA1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+SHA1.h"; sourceTree = "<group>"; };
+		639429E92211D0FA002CC6CC /* NSString+SHA1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SHA1.m"; sourceTree = "<group>"; };
+		639429EB2211D127002CC6CC /* secViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secViewController.swift; sourceTree = "<group>"; };
 		63991420220D56C500C9416E /* admin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = admin.jpg; sourceTree = "<group>"; };
+		63A4DFCF220FB62500E6F6D0 /* askTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = askTableViewCell.swift; sourceTree = "<group>"; };
+		63BF3B30220FD45D00748F8D /* offer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = offer.swift; sourceTree = "<group>"; };
+		63BF3B34220FE03800748F8D /* Me.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Me.plist; sourceTree = "<group>"; };
+		63D5C3D5220E702100E77F94 /* OfferTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferTableViewController.swift; sourceTree = "<group>"; };
+		63D5C3D7220E703500E77F94 /* AskTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskTableViewController.swift; sourceTree = "<group>"; };
+		63D5C3D9220E70B900E77F94 /* AddOfferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOfferViewController.swift; sourceTree = "<group>"; };
+		63D5C3DB220E70CB00E77F94 /* AddAskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAskViewController.swift; sourceTree = "<group>"; };
+		63D5C3DD220E7DF500E77F94 /* VolunteerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolunteerViewController.swift; sourceTree = "<group>"; };
+		63D5C3DF220E7F3E00E77F94 /* offerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = offerTableViewCell.swift; sourceTree = "<group>"; };
 		63F62B0D21EDAFA90037C20E /* AllHeart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllHeart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F62B1021EDAFA90037C20E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63F62B1221EDAFA90037C20E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +129,7 @@
 				63782EE221EDBD160043E432 /* RegiesterViewController.swift */,
 				63782EE021EDBCF20043E432 /* loginViewController.swift */,
 				634BF649220BEF48006A96DB /* MeViewController.swift */,
+				636989D5220E64E400C8D5EB /* SettingViewController.swift */,
 			);
 			path = My;
 			sourceTree = "<group>";
@@ -122,9 +151,44 @@
 			path = img;
 			sourceTree = "<group>";
 		};
+		639429E52211D0B5002CC6CC /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				639429E82211D0DB002CC6CC /* NSString+SHA1.h */,
+				639429E92211D0FA002CC6CC /* NSString+SHA1.m */,
+				639429EB2211D127002CC6CC /* secViewController.swift */,
+				639429E62211D0C9002CC6CC /* MessageViewController.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		63A4DFCA220EB10E00E6F6D0 /* plist */ = {
+			isa = PBXGroup;
+			children = (
+				63BF3B34220FE03800748F8D /* Me.plist */,
+			);
+			path = plist;
+			sourceTree = "<group>";
+		};
+		63D5C3D4220E6DA100E77F94 /* Volunteer */ = {
+			isa = PBXGroup;
+			children = (
+				63D5C3D5220E702100E77F94 /* OfferTableViewController.swift */,
+				63D5C3D7220E703500E77F94 /* AskTableViewController.swift */,
+				63D5C3D9220E70B900E77F94 /* AddOfferViewController.swift */,
+				63D5C3DB220E70CB00E77F94 /* AddAskViewController.swift */,
+				63D5C3DD220E7DF500E77F94 /* VolunteerViewController.swift */,
+				63D5C3DF220E7F3E00E77F94 /* offerTableViewCell.swift */,
+				63A4DFCF220FB62500E6F6D0 /* askTableViewCell.swift */,
+				63BF3B30220FD45D00748F8D /* offer.swift */,
+			);
+			path = Volunteer;
+			sourceTree = "<group>";
+		};
 		63F62B0421EDAFA90037C20E = {
 			isa = PBXGroup;
 			children = (
+				639429E42211C904002CC6CC /* RongCloud.h */,
 				63F62B0F21EDAFA90037C20E /* AllHeart */,
 				63F62B2721EDAFAD0037C20E /* AllHeartTests */,
 				63F62B3221EDAFAD0037C20E /* AllHeartUITests */,
@@ -147,6 +211,9 @@
 		63F62B0F21EDAFA90037C20E /* AllHeart */ = {
 			isa = PBXGroup;
 			children = (
+				639429E52211D0B5002CC6CC /* Chat */,
+				63A4DFCA220EB10E00E6F6D0 /* plist */,
+				63D5C3D4220E6DA100E77F94 /* Volunteer */,
 				636B209721FD3C85002A998F /* img */,
 				632F833C21F870EC00340B0B /* CQL */,
 				632F833B21F870AA00340B0B /* My */,
@@ -209,6 +276,7 @@
 				63F62B0A21EDAFA90037C20E /* Frameworks */,
 				63F62B0B21EDAFA90037C20E /* Resources */,
 				201B61E83A96CD8978CE0916 /* [CP] Embed Pods Frameworks */,
+				4554ACEC1E825BA270DEA43D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -307,6 +375,7 @@
 				635C55B7220DB64E009C2D12 /* login.jpg in Resources */,
 				63F62B1B21EDAFAD0037C20E /* Assets.xcassets in Resources */,
 				63F62B1621EDAFA90037C20E /* Main.storyboard in Resources */,
+				63BF3B35220FE03800748F8D /* Me.plist in Resources */,
 				63991421220D56C500C9416E /* admin.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,6 +447,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AllHeart/Pods-AllHeart-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		4554ACEC1E825BA270DEA43D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AllHeart/Pods-AllHeart-resources.sh",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RongCloud.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/en.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/zh-Hans.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/Emoji.plist",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RCConfig.plist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RongCloud.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/en.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zh-Hans.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Emoji.plist",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RCConfig.plist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AllHeart/Pods-AllHeart-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -386,13 +485,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				63782EE121EDBCF20043E432 /* loginViewController.swift in Sources */,
+				63D5C3D8220E703500E77F94 /* AskTableViewController.swift in Sources */,
 				6355791021F555AF00CC46E2 /* MenuViewController.swift in Sources */,
+				639429EA2211D0FA002CC6CC /* NSString+SHA1.m in Sources */,
+				63A4DFD0220FB62500E6F6D0 /* askTableViewCell.swift in Sources */,
 				634BF64A220BEF48006A96DB /* MeViewController.swift in Sources */,
 				63F62B1321EDAFA90037C20E /* ViewController.swift in Sources */,
+				63D5C3DE220E7DF500E77F94 /* VolunteerViewController.swift in Sources */,
+				639429EC2211D127002CC6CC /* secViewController.swift in Sources */,
+				63D5C3DA220E70B900E77F94 /* AddOfferViewController.swift in Sources */,
 				632F834021F8715500340B0B /* CQL.swift in Sources */,
+				63BF3B31220FD45D00748F8D /* offer.swift in Sources */,
+				639429E72211D0C9002CC6CC /* MessageViewController.swift in Sources */,
+				63D5C3DC220E70CB00E77F94 /* AddAskViewController.swift in Sources */,
+				636989D6220E64E400C8D5EB /* SettingViewController.swift in Sources */,
+				63D5C3D6220E702100E77F94 /* OfferTableViewController.swift in Sources */,
 				63F62B1921EDAFA90037C20E /* AllHeart.xcdatamodeld in Sources */,
 				63F62B1121EDAFA90037C20E /* AppDelegate.swift in Sources */,
 				63782EE321EDBD160043E432 /* RegiesterViewController.swift in Sources */,
+				63D5C3E0220E7F3E00E77F94 /* offerTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,6 +687,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = edu.sicnu.AllHeart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/zongpingzhang/Desktop/大创工程/AllHeart/RongCloud.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -594,6 +706,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = edu.sicnu.AllHeart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/zongpingzhang/Desktop/大创工程/AllHeart/RongCloud.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

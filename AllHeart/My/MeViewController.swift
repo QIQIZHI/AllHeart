@@ -37,6 +37,10 @@ class MeViewController: UIViewController,UIImagePickerControllerDelegate,UINavig
                 
             }else{
                // self.myData.isEnabled = false
+                self.loginbutton.title = "登录"
+                UserDefaults.standard.set(_un, forKey: "name")
+                 self.loginbutton.isEnabled = true
+                self.username.text = "请登录"
                 self.imgbutton.isEnabled = false
                 self.hpt.image = image?.toCircle()
             }
@@ -46,8 +50,8 @@ class MeViewController: UIViewController,UIImagePickerControllerDelegate,UINavig
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         self.username.text = "请登录"
+        // Do any additional setup after loading the view.
     }
     //用户登录以后界面的改变
     func change(str:String) {

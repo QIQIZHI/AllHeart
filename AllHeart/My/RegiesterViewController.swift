@@ -81,6 +81,7 @@ class RegiesterViewController: UIViewController,UITextFieldDelegate,UIImagePicke
                             //self.cql.initHead(userName: _un!, image: image!)
                             let obj = AVObject(className:"Headportrait")
                             
+                            //let data = self.userimg.image!.toCircle().pngData()
                             let data = self.userimg.image!.toCircle().pngData()
                             let file = AVFile(data:data!)
                             obj.setObject(file,forKey:"headp")
