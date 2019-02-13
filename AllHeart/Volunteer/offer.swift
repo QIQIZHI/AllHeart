@@ -13,10 +13,10 @@ class offer{
     var time:String
     var content:String
     var userimg:UIImage?
-    init(username:String,time:String,content:String,userimg:UIImage){
+    init(username:String,time:String,content:String){
         self.username = username
         self.time = time
         self.content = content
-        self.userimg = userimg
+        //self.userimg = userimg
     }
 }

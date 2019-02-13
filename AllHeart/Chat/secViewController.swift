@@ -20,7 +20,7 @@ class secViewController: RCConversationListViewController,RCIMUserInfoDataSource
         if(temp.count>0)
         {
             let U=temp[0]["image"] as! AVFile
-            url=U.url!
+           // url=U.url!
             //  let U=temp!["image"] as! AVFile
             //  photoImageView.image=UIImage(data: U.getData()!)
             // text.text=temp?["string"] as! String

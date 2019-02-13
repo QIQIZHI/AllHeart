@@ -21,9 +21,7 @@ class AddOfferViewController: UIViewController {
         super.viewDidLoad()
         cql.getHead(userName: UserDefaults.standard.string(forKey: "name") ?? "zhang3", finished: { (img) in
             DispatchQueue.main.async {
-                print(img)
-                self.myimage.image = img
-                print("&&&&&&&&&&&&&&&")
+                //self.myimage.image = img
             }
             
         })
@@ -68,6 +66,7 @@ class AddOfferViewController: UIViewController {
                 //获取要发布的信息
                 let _content = offerContent.text
                 offer.setObject(_content,forKey:"content")
+                offer.setObject("11", forKey: "type")
                 offer.saveInBackground()
                 /*************后续需要添加地址等***********/
                 

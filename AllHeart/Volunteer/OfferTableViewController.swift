@@ -17,9 +17,7 @@ class OfferTableViewController: UITableViewController {
     var offerArr = [offer]()
     let cql = CQL()
     var myimage: UIImage?
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        //读取leancloud数据
+    override func viewWillAppear(_ animated: Bool) {
         let query=AVQuery(className:"offerInformation")
         query.whereKey("type",equalTo:"11")
         //"createdAt", .Descending
@@ -31,19 +29,47 @@ class OfferTableViewController: UITableViewController {
                 let time=temp[i]["time"]
                 let content=temp[i]["content"]
                 
-                let U = temp[i]["userimg"] as! AVFile
-                myimage = UIImage(data:U.getData()!)
-//                cql.getHead(userName: username as! String, finished: { (img) in
-//                    DispatchQueue.main.async {
-//                        print(img)
-//                        self.myimage = img
-//                        print("&&&&&&&&&&&&&&&")
-//                    }
-//                 })
-                loadOffer(username: username as! String, time: time as! String, content: content as! String,userimg:myimage!)
+                //let U = temp[i]["userimg"] as! AVFile
+                //myimage = UIImage(data:U.getData()!)
+                //                cql.getHead(userName: username as! String, finished: { (img) in
+                //                    DispatchQueue.main.async {
+                //                        print(img)
+                //                        self.myimage = img
+                //                        print("&&&&&&&&&&&&&&&")
+                //                    }
+                //                 })
+                loadOffer(username: username as! String, time: time as! String, content: content as! String)
                 //loadOffer(username: username as! String, time: time as! String, content: content as! String)
             }
         }
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        //读取leancloud数据
+//        let query=AVQuery(className:"offerInformation")
+//        query.whereKey("type",equalTo:"11")
+//        //"createdAt", .Descending
+//        let temp=query.findObjects() as! [AVObject]
+//        if(temp.count>0){
+//            for i in 0..<temp.count{
+//                let username = temp[i]["username"]
+//                print(username)
+//                let time=temp[i]["time"]
+//                let content=temp[i]["content"]
+//
+//                //let U = temp[i]["userimg"] as! AVFile
+//                //myimage = UIImage(data:U.getData()!)
+////                cql.getHead(userName: username as! String, finished: { (img) in
+////                    DispatchQueue.main.async {
+////                        print(img)
+////                        self.myimage = img
+////                        print("&&&&&&&&&&&&&&&")
+////                    }
+////                 })
+//                loadOffer(username: username as! String, time: time as! String, content: content as! String)
+//                //loadOffer(username: username as! String, time: time as! String, content: content as! String)
+//            }
+//        }
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -52,12 +78,12 @@ class OfferTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     //添加对象到数组
-    private func loadOffer(username:String,time:String,content:String,userimg:UIImage){
-        let offer1=offer(username: username, time: time, content: content,userimg:userimg)
+    private func loadOffer(username:String,time:String,content:String){
+        let offer1=offer(username: username, time: time, content: content)
         offerArr.append(offer1)
     }
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 140
+        return 260
     }
     
     // MARK: - Table view data source
@@ -81,7 +107,13 @@ class OfferTableViewController: UITableViewController {
          cell.username.text = off.username
          cell.time.text = off.time
          cell.content.text = off.content
-         cell.userimg.image = off.userimg
+        cql.getHead(userName:off.username as! String, finished: { (img) in
+                                DispatchQueue.main.async {
+                                    print(img)
+                                   cell.userimg.image = img
+                                    print("&&&&&&&&&&&&&&&")
+                                }
+        })
          return cell
      }
     
